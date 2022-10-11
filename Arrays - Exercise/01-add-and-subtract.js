@@ -1,0 +1,85 @@
+function addAndSubstract(input) {
+
+    let modifiedArray = [];
+    let originArraySum = 0;
+    let modifiedArraySum = 0;
+    let inputLength = input.length;
+
+    for (let i = 0; i < inputLength; i++) {
+        
+        let currentNumber = input[i];
+        
+        let even = currentNumber + i;
+        let odd = currentNumber - i;
+
+        if (currentNumber % 2 === 0) {
+            modifiedArray.push(even);
+        } else {
+            modifiedArray.push(odd);
+        }
+        originArraySum += currentNumber;
+        modifiedArraySum += modifiedArray[i];
+    }
+    console.log(modifiedArray);
+    console.log(originArraySum);
+    console.log(modifiedArraySum);
+}
+addAndSubstract([5, 15, 23, 56, 35]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let resultArray = [];
+// let inputArraySum = 0;
+// let resultArraySum = 0;
+// let inputLength = input.length;
+
+// for (let i = 0; i < inputLength; i++) {
+
+//     let currentNumber = input[i];
+
+//     let odd = currentNumber - i;
+//     let even = currentNumber + i;
+    
+//     if (currentNumber % 2 === 0) {
+//         resultArray.push(even);
+//     } else {
+//         resultArray.push(odd);
+//     }
+//     inputArraySum += currentNumber;
+//     resultArraySum += resultArray[i];       
+// }
+// console.log(resultArray);
+// console.log(inputArraySum);
+// console.log(resultArraySum);
